@@ -2,8 +2,27 @@ const user = {
     firstName: 'Adam',
     lastName: 'Nowak',
     born: {
-        day: '14',
-        month: '04',
-        year: '1985'
+        day: '06',
+        month: '06',
+        year: '2025'
     }
 }
+
+const today = new Date();
+
+const day = today.getDate();
+const month = today.getMonth();
+
+const userBirthDay = user['born']['day'];
+const userBirthMonth = user['born']['month'];
+
+if (userBirthDay == day && userBirthMonth == month) {
+    console.log('User has birthday today!')
+} else {
+    console.log('User has not birthday today :(');
+}
+
+
+
+// console.log(day);
+// console.log(month)
