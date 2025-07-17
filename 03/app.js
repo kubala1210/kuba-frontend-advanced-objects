@@ -46,15 +46,10 @@ books.getTitle = function (isbn, lang) {
         return null;
     }
 
-    const titlePl = this[isbn]['title']['pl'];
-    const titleEng = this[isbn]['title']['en'];
+    const title = this[isbn]['title'][lang];
 
-    if (lang === 'pl') {
-        return titlePl;
-    }
-
-    if (lang === 'en') {
-        return titleEng
+    if (title) {
+        return title
     }
 }
 

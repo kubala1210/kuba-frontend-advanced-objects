@@ -2,16 +2,16 @@ const user = {
     firstName: 'Adam',
     lastName: 'Nowak',
     born: {
-        day: '06',
-        month: '06',
+        day: '08',
+        month: '07',
         year: '2025'
-    }
-}
+    },
+};
 
 const today = new Date();
 
 const day = today.getDate();
-const month = today.getMonth();
+const month = today.getMonth() + 1;
 
 const userBirthDay = user['born']['day'];
 const userBirthMonth = user['born']['month'];
@@ -24,5 +24,5 @@ if (userBirthDay == day && userBirthMonth == month) {
 
 
 
-// console.log(day);
-// console.log(month)
+console.log(day);
+console.log(month);
